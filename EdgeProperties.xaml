@@ -1,0 +1,17 @@
+﻿<Window x:Class="MarkovApp.EdgeProperties"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Curve Coordinates" Width="300" Height="200">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="1" Margin="10,39,10,-58">
+            <Label x:Name="valueLabel_Copy" Content="Стойност на ребро:" Width="292" Height="28"/>
+        </StackPanel>
+        <TextBox x:Name="valueTextBox" Margin="150,46,68,46" Grid.Row="1"/>
+        <Button Content="Въведи" Click="EnterButton_Click" Margin="108,105,108,-9" Grid.Row="1" />
+    </Grid>
+</Window>

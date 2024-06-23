@@ -1,0 +1,16 @@
+﻿<Window x:Class="MarkovApp.RegularMatrixDisplay"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MarkovApp"
+        mc:Ignorable="d"
+        Title="ИзчисленияРегулярнаМатрица" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="matrixTextBox" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" IsReadOnly="True" Margin="10,58,10,121" FontFamily="Consolas"/>
+        <Button x:Name="closeButton" Content="Затвори" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,404,0,0" Click="CloseButton_Click"/>
+        <Label Content="Вектор на състоянията:" HorizontalAlignment="Left" Margin="10,344,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.614,-0.648" Width="144"/>
+        <TextBox x:Name="statesTextBox" HorizontalAlignment="Left" Margin="159,348,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="165" IsReadOnly="true"/>
+        <Label Content="Матрица резултат:" HorizontalAlignment="Left" Margin="10,19,0,0" VerticalAlignment="Top" Width="113"/>
+    </Grid>
+</Window>

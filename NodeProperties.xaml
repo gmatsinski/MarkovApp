@@ -1,0 +1,31 @@
+﻿<Window x:Class="MarkovApp.NodeProperties"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MarkovApp"
+        mc:Ignorable="d"
+        Title="NodeProperties" Height="200" Width="450">
+    <Grid Margin="-11,0,-192,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="32,15,-12,6">
+            <TextBlock Text="Първоначална вероятност:" VerticalAlignment="Center" Width="180"/>
+            <TextBox x:Name="txtInitialProbability" Width="91" Height="19"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="32,14,-12,6">
+            <TextBlock Text="Вероятност за оставане:" VerticalAlignment="Center" Width="180"/>
+            <TextBox x:Name="txtProbabilityOfStaying" Width="90"/>
+        </StackPanel>
+        <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10"/>
+        <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,10"/>
+        <Button Content="Запази" Click="Save_Click" Margin="193,37,395,-17" Grid.Row="4"/>
+    </Grid>
+</Window>
